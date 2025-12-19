@@ -1,4 +1,4 @@
-<p align="center">🛡️ NetGuard-RF: AI Firewall Intelligence</p>
+<p align="center">🛡️ Implementation of AI-based Cognitive Firewall in Banking Sector</p>
 <p align="center"> <img src="https://img.shields.io/badge/Model-Random_Forest-616ae5?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img src="https://img.shields.io/badge/Accuracy-99.2%25-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Precision-100%25-blue?style=for-the-badge" /> </p>
 
 ⚡ Project Vision
