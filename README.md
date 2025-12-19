@@ -1,35 +1,47 @@
-<p align="center">🛡️ Implementation of AI-based Cognitive Firewall in Banking Sector</p>
-<p align="center"> <img src="https://img.shields.io/badge/Model-Random_Forest-616ae5?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img src="https://img.shields.io/badge/Accuracy-99.2%25-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Precision-100%25-blue?style=for-the-badge" /> </p>
+<p align="center">🛡️ AI-Driven Cognitive Firewall</p>
+<p align="center"><b>Next-Generation Intrusion Detection for the Banking Sector</b></p>
 
-⚡ Project Vision
-NetGuard-RF is a high-performance classification engine designed to distinguish between Normal and Suspicious network traffic. By leveraging ensemble learning, it provides a robust defense mechanism for automated security systems.
+<p align="center"> <img src="https://img.shields.io/badge/Model-Random_Forest_Ensemble-616ae5?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img src="https://img.shields.io/badge/Domain-FinTech_Security-FFD700?style=for-the-badge&logo=bank&logoColor=black" /> <img src="https://img.shields.io/badge/Accuracy-99.2%25-2ea44f?style=for-the-badge" /> </p>
 
-📊 Performance Analytics
-The model was validated using a comprehensive suite of metrics to ensure zero-trust reliability.
+💎 Project Essence
+In the high-stakes environment of banking, traditional rule-based firewalls often fail against sophisticated anomalies. NetGuard-RF implements a cognitive layer that learns from transaction patterns, distinguishing between legitimate banking operations and suspicious network intrusions with near-perfect precision.
 
-<table border="0"> <tr> <td width="50%"> <p align="center"><b>Confusion Matrix</b></p> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/1_confusion_matrix.png" alt="Confusion Matrix" width="100%" /> </td> <td width="50%"> <p align="center"><b>ROC / AUC Curve</b></p> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/3_roc_curve.png" alt="ROC Curve" width="100%" /> </td> </tr> </table>
+🚀 Performance Dashboard
+The model achieves a 100% Precision rate, crucial for banking to ensure no "False Positives" lock out legitimate customers.
 
-🧠 Explainable AI (XAI)
-In security, the "Why" matters as much as the "What." Our feature analysis shows that Normalized Transaction Amounts and Time of Day are critical indicators of suspicious activity.
+<table border="0"> <tr style="background-color: transparent;"> <td width="50%"> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/1_confusion_matrix.png" style="border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" /> <p align="center"><b>Classification Accuracy</b></p> </td> <td width="50%"> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/3_roc_curve.png" style="border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" /> <p align="center"><b>Reliability Curve (AUC: 0.999)</b></p> </td> </tr> </table>
 
-<p align="center"> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/2_feature_importance.png" alt="Feature Importance" width="90%" /> </p>
+🧠 Explainable AI (XAI) & Security Logic
+We utilize Feature Importance to bridge the gap between black-box ML and human-auditable security.
 
-📈 Data Distribution & Stability
-We ensured the model remains stable across imbalanced datasets by monitoring prediction spreads and metric consistency.
+Financial Context: AmountNormalized is the highest predictor, identifying transaction anomalies.
 
-<table border="0"> <tr> <td> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/4_prediction_distribution.png" alt="Distribution" width="350" /> <p align="center"><b>Prediction Spread</b></p> </td> <td> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/5_metrics_comparison.png" alt="Metrics" width="550" /> <p align="center"><b>Final Scorecard</b></p> </td> </tr> </table>
+Temporal Context: Hour analysis detects off-peak suspicious attempts.
 
-🚀 Integration
-The model is production-ready via joblib.
+<p align="center"> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/2_feature_importance.png" width="90%" style="border-radius:15px;" /> </p>
+
+📊 Operational Stability
+Our testing confirms high stability even in imbalanced datasets typical of banking fraud detection.
+
+<table border="0"> <tr> <td width="40%"> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/4_prediction_distribution.png" width="100%" /> </td> <td width="60%"> <img src="https://raw.githubusercontent.com/HRISHIK123958/research/main/outputs/5_metrics_comparison.png" width="100%" /> </td> </tr> <tr> <td align="center"><b>Class Distribution</b></td> <td align="center"><b>Validation Scorecard</b></td> </tr> </table>
+
+🔧 Deployment Schema
+The system is optimized for Ultra-Low Latency inference.
 
 Python
 
 import joblib
 
-# Load the brain
-clf = joblib.load('random_forest_firewall_model.joblib')
+# Initialize Cognitive Engine
+engine = joblib.load('random_forest_firewall_model.joblib')
 
-# Classify traffic
-# Returns: ['Normal'] or ['Suspicious']
-result = clf.predict(live_traffic_data)
-<p align="center"> <b>Developed by <a href="https://github.com/iArnabMaity">ARNAB MAITY</a>,  <a href="https://github.com/HRISHIK123958">HRISHIK DEY</a>,  <a hreF="https://github.com/zainab9hasan"> ZAINAB HASAN</a>,  <a href="https://github.com/Sohelshaikh2301">SK SOHEL RAHAMAN</a></b> | 2025</p>
+# Process Real-time Traffic
+# Feature vector: [Amount, IsHighAmount, Hour, IsNight, Foreign, etc.]
+decision = engine.predict(network_payload)
+
+if decision == 'Suspicious':
+    trigger_security_protocol()
+👥 Research & Development Team
+ADAMAS UNIVERSITY Cognitive Computing & Cybersecurity Lab
+
+<p align="center"> <b> <a href="https://github.com/iArnabMaity">Arnab Maity</a> • <a href="https://github.com/HRISHIK123958">Hrishik Dey</a> • <a href="https://github.com/zainab9hasan">Zainab Hasan</a> • <a href="https://github.com/sohel762">Sohel Ali Mondal</a> • <a href="https://github.com/Sohelshaikh2301">Sk Sohel Rahaman</a> </b> </p>
